@@ -31,9 +31,9 @@ export const startTimer = () =>{
     }
     if(state.timeLeft <= 0){
         alarm();
-        console.log(state.activeTodo);
 
         if(state.status === 'work'){
+        console.log(state.activeTodo);
             state.activeTodo.pomodoro +=1;
             
             if(state.activeTodo.pomodoro % state.count)
